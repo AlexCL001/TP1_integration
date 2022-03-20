@@ -16,8 +16,7 @@
             <li><a href="Table.html">Table</a></li>
         </nav>
         <div>
-            <p>Recherche :</p>
-            <input type="text">
+            <input class="icon" type="text" placeholder="Recherche">
         </div>
     </header>
     <main class="mainForm">
@@ -41,14 +40,22 @@
                     <label for="name">Entrez votre nom:</label>
                     <input type="text" required>
                     <label for="email">Entrez votre email:</label>
-                    <input type="email" required>
+                    <input id="email" type="email" required>
                     <input type="submit" value="Envoyer">
                 </fieldset>
             </form>
         </div>
     </main>
     <footer>
-
+        <p>"Adopter c'est une passion et un mode de vie!"</p>
     </footer>
 </body>
+<script>
+    let email = document.querySelector("#email");
+let reg = /^[a-zA-Z0-9]{1,}\@[a-zA-Z0-9]{1,}\.[a-zA-Z]{1,}$/
+
+    email.onfocus() = function (){
+
+    }
+</script>
 </html>
