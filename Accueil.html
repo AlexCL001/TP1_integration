@@ -7,7 +7,7 @@
     <title>Animalerie</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="acceuil">
     <header>
         <h1>Animalerie</h1>
         <nav>
@@ -20,11 +20,56 @@
             <input type="text">
         </div>
     </header>
-    <main>
-
+    <main class="mainAccueil">
+        <div class="carou">
+            <button id="prev">Précédent</button>
+            <img id="carImg" alt="" src="img/img1.jpg">
+            <button id="next">Suivant</button>
+        </div>
+        <div class="textAccueil">
+            <h2>Bienvenue chez animalerie animaux</h2><br>
+            <p>loremp ipsum Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has 
+                been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type 
+                and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap 
+                into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release 
+                of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like 
+                Aldus PageMaker including versions of Lorem Ipsum  into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release 
+                of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like 
+                Aldus PageMaker including versions of Lorem Ipsum</p>
+        </div>  
     </main>
     <footer>
 
     </footer>
 </body>
+<script>
+let prev = document.querySelector('#prev');
+let next = document.querySelector('#next');
+let carImg = document.getElementById('carImg'); 
+let compteur = 1;
+
+prev.addEventListener('click', prevItem);
+next.addEventListener('click', nextItem);
+  
+function displayImg() {
+    carImg.src = "img/img" + compteur + ".jpg";
+   }
+
+function prevItem() {
+    compteur--;
+    if(compteur == 0){
+        // aller au max
+        compteur = 3;
+    }
+    displayImg();
+  }
+
+function nextItem() {
+    compteur++;
+    if(compteur == 4) {
+        compteur = 1
+    }
+    displayImg();
+  }
+</script>
 </html>
