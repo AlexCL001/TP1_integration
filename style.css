@@ -30,8 +30,10 @@ nav li a:hover{
 h1{
     width: 20%;
     height: 100%;
+    padding: 0 10px 0 10px;
     font-size: 4rem;
-    margin-left: 50px;
+    display: flex;
+    justify-content: center;
     border-right: 2px solid black;
 }
 header div{
@@ -48,3 +50,14 @@ header div input{
     font-size: 1.25rem;
     padding: 5px 0 5px 0;
 }
+
+
+.diapo{
+    width: 1600px;
+    height: 400px;
+    background-color: #EDEDED;
+    background-image: url("img/fond.jfif");
+    background-size: contain;
+   
+
+    }

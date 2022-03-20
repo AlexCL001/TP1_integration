@@ -1,0 +1,21 @@
+"use strict";
+let prev = document.querySelector('#prev');
+let next = document.querySelector('#next');
+let carImg = document.getElementById('carImg'); 
+
+prev.addEventListener('click', prevItem);
+next.addEventListener('click', nextItem);
+  
+function displayImg() {
+    carImg.src = "img/" + ".jfif";
+   }
+function prevItem() {
+    compteur--;
+    } 
+    displayImg();
+  }
+function nextItem() {
+    compteur++;
+    } 
+    displayImg();
+  }
