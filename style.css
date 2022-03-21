@@ -105,9 +105,12 @@ header div input{
 .textAccueil{
     margin-top: 1.5rem;
 }
-.textAccueil p{
+.pAccueil{
     text-align: justify;
     width: 36rem;
+}
+.pAccueil::first-letter{
+    font-size: 2.5rem;
 }
 .mainForm{
     height: 100vh;
