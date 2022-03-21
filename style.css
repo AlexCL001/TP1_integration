@@ -63,6 +63,10 @@ header div input{
     font-size: 1.25rem;
     padding: 5px 0 5px 0;
 }
+header div input:focus{
+    border: 2px solid blue;
+    /* border-radius: 0; */
+}
 @media screen and (max-width: 700px) {
     #carImg, #prev, #next {
       display: none;
@@ -132,6 +136,12 @@ header div input{
     font-size: 1.5rem;
     margin-bottom: 30px;
 }
+.email:focus:valid{
+    border: 4px solid green;
+}
+.email:focus:invalid{
+    border: 4px solid red;
+}
 p span{
     font-size: 3rem;
 }
@@ -143,4 +153,6 @@ footer{
     font-style: italic;
 }
 
-
+/* pour faire le table */
+/* body :nth-child(4n) */
+/* valid non-valid pour le email */
