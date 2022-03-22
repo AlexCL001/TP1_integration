@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
+    <header class="print">
         <h1>Animalerie</h1>
         <nav>
             <li><a href="Accueil.html">Accueil</a></li>
@@ -19,14 +19,83 @@
             <input class="icon" type="text" placeholder="Recherche">
         </div>
     </header>
-    <main>
+    <main class="mainForm">
+        <table class="Table">
+            <thead>
+                <tr>
+                    <th>NOM</th>
+                    <th>TYPE ANIMAL</th>
+                    <th>FAMILLE</th>
+                    <th>SEXE</th>
+                    <th>VACINNATION</th>
+                    <th>PRIX</th>
+                    <th>ÂGE</th>
+                </tr>
+            </thead>
+            
+            <tbody>
+                <tr class="impair">
+                    <td>Merlin</td>
+                    <td>Chien</td>
+                    <td>Golden</td>
+                    <td>M</td>
+                    <td>Oui</td>
+                    <td>400$</td>
+                    <td>8 mois</td>
+                </tr>
 
+                <tr>
+                    <td>Frodon</td>
+                    <td>Chat</td>
+                    <td>Tabby</td>
+                    <td>M</td>
+                    <td>Oui</td>
+                    <td>400$</td>
+                    <td>11 mois</td>
+                </tr>
+
+                <tr>
+                    <td>Seicoya</td>
+                    <td>Kangourou</td>
+                    <td>Australien</td>
+                    <td>F</td>
+                    <td>Oui</td>
+                    <td>1200$</td>
+                    <td>1 ans</td>
+                </tr>
+
+                <tr>
+                    <td>Zeldana</td>
+                    <td>Gerbille</td>
+                    <td>Fermier</td>
+                    <td>F</td>
+                    <td>Non</td>
+                    <td>50$</td>
+                    <td>3 mois</td>
+                </tr>
+
+                <tr>
+                    <td>Polo</td>
+                    <td>Lapin</td>
+                    <td>Sauvage</td>
+                    <td>M</td>
+                    <td>Oui</td>
+                    <td>250$</td>
+                    <td>2 mois</td>
+                </tr>
+            </tbody>
+        </table>    
     </main>
     <footer>
         <p>"Adopter c'est une passion et un mode de vie!"</p>
     </footer>
 </body>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-8SML97W2NV"></script>
 <script>
-    
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-8SML97W2NV');
 </script>
 </html>
