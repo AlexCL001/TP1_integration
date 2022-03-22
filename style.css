@@ -144,6 +144,10 @@ header div input{
 .email:focus:invalid{
     border: 4px solid red;
 }
+.form button{
+    font-size: 1.5rem;
+
+}
 p span{
     font-size: 3rem;
 }
@@ -171,7 +175,7 @@ th, td{
     border: 1px solid black;
     padding: 10px;
     }
-tr:nth-child(even){
+tr:nth-child(odd){
     color:darkgoldenrod;
     font-family:Arial, Helvetica, sans-serif;
     font-size: 1.1rem;
