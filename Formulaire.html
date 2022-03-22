@@ -21,11 +21,11 @@
     </header>
     <main class="mainForm">
         <div class="form">
-            <form action="#">
+            <form action="http://philippefleury.com/backend.php" method="post">
                 <fieldset>
                     <legend>Formulaire</legend>
                     <label for="animals">Choisie ton animal:</label>
-                    <select name="" id="">
+                    <select name="Animal" id="">
                         <optgroup label="Animaux à 4-jambes">
                             <option value="Chien">Chien</option>
                             <option value="chat">Chat</option>
@@ -38,10 +38,10 @@
                           </optgroup>
                     </select>
                     <label for="name">Entrez votre nom:</label>
-                    <input type="text" required>
+                    <input name="Nom" type="text" required>
                     <label for="email">Entrez votre email:</label>
-                    <input class="email" type="email" required>
-                    <input type="submit" value="Envoyer">
+                    <input name="Email" class="email" type="email" required>
+                    <button type="submit">Envoyer</button>
                 </fieldset>
             </form>
         </div>
