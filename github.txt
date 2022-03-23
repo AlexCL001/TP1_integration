@@ -1,7 +1,0 @@
-TP1_integration
-
-Par
-
-Alexandre Cloutier-Lemay et Christopher Petryk
-
-https://github.com/AlexCL001/TP1_integration
