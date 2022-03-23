@@ -4,16 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Animalerie</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Acceuil</title>
+    <link rel="stylesheet" href="../static/style.css">
 </head>
 <body class="acceuil">
     <header>
         <h1>Animalerie</h1>
         <nav>
-            <li><a href="Accueil.html">Accueil</a></li>
-            <li><a href="Formulaire.html">Formulaire</a></li>
-            <li><a href="Table.html">Table</a></li>
+            <li><a href="/">Accueil</a></li>
+            <li><a href="/Formulaire">Formulaire</a></li>
+            <li><a href="/Table">Table</a></li>
         </nav>
         <div>
             <input class="icon" type="text" placeholder="Recherche">
@@ -22,7 +22,7 @@
     <main class="mainAccueil">
         <div class="carou">
             <button id="prev">Précédent</button>
-            <img id="carImg" alt="" src="img/img1.jpg">
+            <img id="carImg" alt="" src="../static/img/img1.jpg">
             <button id="next">Suivant</button>
         </div>
         <div class="textAccueil">
@@ -51,7 +51,7 @@ prev.addEventListener('click', prevItem);
 next.addEventListener('click', nextItem);
   
 function displayImg() {
-    carImg.src = "img/img" + compteur + ".jpg";
+    carImg.src = "../static/img/img" + compteur + ".jpg";
    }
 
 function prevItem() {
